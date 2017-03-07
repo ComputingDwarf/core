@@ -2065,6 +2065,7 @@ $(eval $(call gb_UnoApi_add_idlfiles,offapi,com/sun/star/chart2/data,\
 	XLabeledDataSequence \
 	XLabeledDataSequence2 \
 	XNumericalDataSequence \
+	XPivotChartDataProvider \
 	XPopupRequest \
 	XRangeHighlighter \
 	XRangeXMLConversion \
