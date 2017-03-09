@@ -2514,7 +2514,7 @@ void lcl_createButtons(const uno::Reference< drawing::XShapes>& xPageShapes,
             pButton->init(xPageShapes, xShapeFactory);
             awt::Point aNewPosition = awt::Point(rRemainingSpace.X + x + 100, rRemainingSpace.Y + 100);
             pButton->setLabel(rPageField);
-            pButton->setCID("PageFieldButton." + OUString::number(nCIDIndex));
+            pButton->setCID("FieldButton.Page." + OUString::number(nCIDIndex));
             pButton->createShapes(aNewPosition, aSize, xModelPage);
             x += aSize.Width + 100;
             nCIDIndex += 1;
@@ -2533,7 +2533,7 @@ void lcl_createButtons(const uno::Reference< drawing::XShapes>& xPageShapes,
             pButton->init(xPageShapes, xShapeFactory);
             awt::Point aNewPosition = awt::Point(rRemainingSpace.X + x + 100, rRemainingSpace.Y + 100);
             pButton->setLabel(rDataField);
-            pButton->setCID("DataFieldButton." + OUString::number(nCIDIndex));
+            pButton->setCID("FieldButton.Data." + OUString::number(nCIDIndex));
             pButton->createShapes(aNewPosition, aSize, xModelPage);
             x += aSize.Width + 100;
             nCIDIndex += 1;
@@ -2553,7 +2553,7 @@ void lcl_createButtons(const uno::Reference< drawing::XShapes>& xPageShapes,
             awt::Point aNewPosition = awt::Point(rRemainingSpace.X + x + 100,
                                                  rRemainingSpace.Y + rRemainingSpace.Height - aSize.Height - 100);
             pButton->setLabel(rRowField);
-            pButton->setCID("ColumnFieldButton." + OUString::number(nCIDIndex));
+            pButton->setCID("FieldButton.Column." + OUString::number(nCIDIndex));
             pButton->createShapes(aNewPosition, aSize, xModelPage);
             x += aSize.Width + 100;
             nCIDIndex += 1;
